@@ -12,6 +12,5 @@ class SecondActivity : AppCompatActivity() {
         val clicksQuantity = intent.getIntExtra("clicked", 0)
 
         secondActivityContent.text = clicksQuantity.toString()
-
     }
 }
