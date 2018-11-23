@@ -1,6 +1,5 @@
 package com.workshopbhack.diogocabral.workshop_bhack
 
-import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -12,10 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         generatePhrase.setOnClickListener{
             clicked++
-            generatedPhrase.text = "fui clicado! $clicked"
+            generatedPhrase.text = getString(R.string.button_clicked_counter, clicked.toString())
 
             val intent =  Intent(this, SecondActivity::class.java)
             intent.putExtra("clicked", clicked)
