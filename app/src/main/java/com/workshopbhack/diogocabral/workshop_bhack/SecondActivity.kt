@@ -9,8 +9,8 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second_activity)
 
-        val clicksQuantity = intent.getIntExtra("clicked", 0)
-
-        secondActivityContent.text = clicksQuantity.toString()
+        val phrase = intent.getStringExtra("phrase")
+        secondActivityTitle.text = getString(R.string.second_activity_title)
+        secondActivityContent.text = phrase
     }
 }

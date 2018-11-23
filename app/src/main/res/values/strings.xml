@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Workshop-BHack</string>
     <string name="button_clicked_counter">Fui clicado! %1$s</string>
+    <string name="main_generated_phrase_text">Clique no botão para gerar frase na nova tela!</string>
+    <string name="second_activity_title">A frase é:</string>
 </resources>
