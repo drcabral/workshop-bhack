@@ -7,34 +7,40 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/secondActivityTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/secondActivityContent"
+        android:layout_width="0dp"
+        android:layout_height="340dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Second Activity"
-        app:layout_constraintBottom_toTopOf="@+id/secondActivityContent"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Número de cliques"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/number_of_clicks"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintTop_toTopOf="@+id/secondActivityTitle"
+        app:layout_constraintVertical_bias="0.239" />
 
     <TextView
-        android:id="@+id/secondActivityContent"
+        android:id="@+id/secondActivityTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="348dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="44dp"
+        android:text="Second Activity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
