@@ -3,4 +3,8 @@
     <string name="button_clicked_counter">Fui clicado! %1$s</string>
     <string name="main_generated_phrase_text">Clique no botão para gerar frase na nova tela!</string>
     <string name="second_activity_title">A frase é:</string>
+    <string name="generate_phrase_button_text">Gerar Frase</string>
+    <string name="base_textview_text">Número de cliques</string>
+    <string name="base_button_text">+ 1</string>
+    <string name="base_toast_button_text">Toast!</string>
 </resources>

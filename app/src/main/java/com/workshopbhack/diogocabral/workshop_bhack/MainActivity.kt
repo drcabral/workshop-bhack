@@ -26,14 +26,15 @@ class MainActivity : AppCompatActivity() {
         val myToast = Toast.makeText(applicationContext, "Minha primeira toast", Toast.LENGTH_SHORT)
         myToast.setGravity(Gravity.CENTER, Gravity.CENTER, 0)
 
-        toastButton.setOnClickListener({
+        toastButton.setOnClickListener{
             myToast.show()
-        })
+        }
 
 
+        generatePhraseButton.text = getString(R.string.generate_phrase_button_text)
         generatePhraseButton.setOnClickListener{
             clicked++
-            generatedPhraseTextView.text = "fui clicado! $clicked"
+            generatedPhraseTextView.text = getString(R.string.button_clicked_counter, clicked.toString())
 
             val intent =  Intent(this, SecondActivity::class.java)
 
