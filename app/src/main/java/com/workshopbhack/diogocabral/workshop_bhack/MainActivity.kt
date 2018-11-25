@@ -1,6 +1,5 @@
 package com.workshopbhack.diogocabral.workshop_bhack
 
-import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -32,9 +31,9 @@ class MainActivity : AppCompatActivity() {
         })
 
 
-        generatePhrase.setOnClickListener{
+        incrementButton.setOnClickListener{
             clicked++
-            generatedPhrase.text = "fui clicado! $clicked"
+            numberOfClicksTextView.text = "fui clicado! $clicked"
 
             val intent =  Intent(this, SecondActivity::class.java)
 
