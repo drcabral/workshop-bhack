@@ -16,16 +16,16 @@ class MainActivity : AppCompatActivity() {
         val myToast = Toast.makeText(applicationContext, "Minha primeira toast", Toast.LENGTH_SHORT)
         myToast.setGravity(Gravity.CENTER, Gravity.CENTER, 0)
 
-        toastButton.setOnClickListener({
+        toastButton.setOnClickListener{
             myToast.show()
-        })
+        }
 
 
         incrementButton.setOnClickListener{
             clicked++
             numberOfClicksTextView.text = "fui clicado! $clicked"
 
-            val intent =  Intent(this, SecondActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("clicked", clicked)
 
             startActivity(intent)
