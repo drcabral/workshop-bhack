@@ -1,8 +1,10 @@
 package com.workshopbhack.diogocabral.workshop_bhack
 
+import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -22,9 +24,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         generatedPhrase.text = getString(R.string.main_generated_phrase_text)
+        val myToast = Toast.makeText(applicationContext, "Minha primeira toast", Toast.LENGTH_SHORT)
+        myToast.setGravity(Gravity.CENTER, Gravity.CENTER, 0)
+
+        toastButton.setOnClickListener({
+            myToast.show()
+        })
+
 
         generatePhrase.setOnClickListener{
             clicked++
+            generatedPhrase.text = "fui clicado! $clicked"
 
             val intent =  Intent(this, SecondActivity::class.java)
 
