@@ -20,9 +20,9 @@ class MainActivity : AppCompatActivity() {
         })
 
 
-        generatePhrase.setOnClickListener{
+        incrementButton.setOnClickListener{
             clicked++
-            generatedPhrase.text = "fui clicado! $clicked"
+            numberOfClicksTextView.text = "fui clicado! $clicked"
         }
 
     }
