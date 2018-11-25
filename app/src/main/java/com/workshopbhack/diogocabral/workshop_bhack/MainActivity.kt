@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        generatedPhrase.text = getString(R.string.main_generated_phrase_text)
+        generatedPhraseTextView.text = getString(R.string.main_generated_phrase_text)
         val myToast = Toast.makeText(applicationContext, "Minha primeira toast", Toast.LENGTH_SHORT)
         myToast.setGravity(Gravity.CENTER, Gravity.CENTER, 0)
 
@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
         })
 
 
-        incrementButton.setOnClickListener{
+        generatePhraseButton.setOnClickListener{
             clicked++
-            numberOfClicksTextView.text = "fui clicado! $clicked"
+            generatedPhraseTextView.text = "fui clicado! $clicked"
 
             val intent =  Intent(this, SecondActivity::class.java)
 
