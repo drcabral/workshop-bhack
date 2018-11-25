@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         val myToast = Toast.makeText(applicationContext, "Minha primeira toast", Toast.LENGTH_SHORT)
         myToast.setGravity(Gravity.CENTER, Gravity.CENTER, 0)
 
-        toastButton.setOnClickListener({
+        toastButton.setOnClickListener{
             myToast.show()
-        })
+        }
 
 
         incrementButton.setOnClickListener{
