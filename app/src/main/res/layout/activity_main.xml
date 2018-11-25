@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/generatePhrase"
+        android:id="@+id/incrementButton"
         android:layout_width="363dp"
         android:layout_height="58dp"
         android:layout_marginBottom="28dp"
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/generatedPhrase"
+        android:id="@+id/numberOfClicksTextView"
         android:layout_width="0dp"
         android:layout_height="340dp"
         android:layout_marginBottom="28dp"
@@ -35,15 +35,15 @@
         android:text="Número de cliques"
         android:textColor="@android:color/white"
         android:textSize="@dimen/number_of_clicks"
-        app:layout_constraintBottom_toTopOf="@+id/generatePhrase"
+        app:layout_constraintBottom_toTopOf="@+id/incrementButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton"
         app:layout_constraintVertical_bias="0.504" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/toastButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
